@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Verification</title>
+	<script type="text/javascript">
+		a=prompt("Enter a Valid Email (a-z,numbers,periods,@_____.__or more)")
+		c=/[@]+[A-z]+[.]+((\d{2})|(\D{2}))/g
+		//c=/^[a-z,0-9,.]+[@][a-z]+[.]([A-z,0-9]{2})/g
+		//c=/^(\w|.)+[@][a-z]+[.]([A-z,0-9]{2})/g
+		//c=/^\W+[@][a-z]+[.]([A-z,0-9]{2})/g
+		
+		//c=/^[a-z,0-9,.]+[@][a-z]+[.][A-z,0-9]{2}/g
+		d=/[.]/g
+		f=a.match(d)
+		q=f.length
+		//document.write(q)
+		//document.write(a.match(d)) 
+		//document.write(a.match(c))
+		aa=a.match(c)
+		if(aa==null)
+		{
+			document.write("Invalid")
+		}
+		else
+		{
+			document.write("Valid")
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
